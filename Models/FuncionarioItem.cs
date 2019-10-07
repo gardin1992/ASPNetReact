@@ -7,7 +7,7 @@ namespace my_new_app.Models
 {
     public class FuncionarioItem
     {
-        public int FuncionarioId { get; set; }
+        public int Id { get; set; }
         public string Nome { get; set; }
         public string Cidade { get; set; }
         public string Departamento { get; set; }

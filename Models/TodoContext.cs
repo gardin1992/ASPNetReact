@@ -1,8 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace my_new_app.Models
 {
@@ -12,7 +8,7 @@ namespace my_new_app.Models
             : base(options)
         {
         }
-
         public DbSet<TodoItem> TodoItems { get; set; }
+        public DbSet<FuncionarioItem> FuncionarioItems { get; set; }
     }
 }

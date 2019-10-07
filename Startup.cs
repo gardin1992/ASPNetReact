@@ -30,8 +30,8 @@ namespace my_new_app
                 configuration.RootPath = "ClientApp/build";
             });
 
-            services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
-            // services.AddDbContext<FuncionarioContext>(options => options.UseSqlServer(Configuration.GetConnectionString("TodoContext")));
+            // services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
+            services.AddDbContext<TodoContext>(options => options.UseSqlServer(Configuration.GetConnectionString("TodoContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
